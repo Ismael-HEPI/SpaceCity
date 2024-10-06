@@ -1,0 +1,148 @@
+/* Estilo para todo el body, imagen de fondo */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('./img/fondo1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Capa oscura con difuminado (60% de opacidad) */
+    z-index: -1; /* Coloca la capa debajo del contenido */
+}
+
+header {
+    display: fixed;
+    justify-content: space-between; /* Distribuye los elementos en los extremos */
+    align-items: center;
+    padding: 10px;
+    background-color: #000000;
+}
+
+.project-name {
+    order: 1; /* Asegura que el nombre del proyecto quede a la izquierda */
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav {
+    order: 2; /* Pone la navegación a la derecha */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative; /* Necesario para posicionar el menú desplegable */
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+nav ul li ul {
+    display: none; /* Oculta el menú desplegable inicialmente */
+    position: absolute; /* Asegura que el menú se posicione debajo del botón "Módulos" */
+    top: 100%; /* Para colocarlo justo debajo del elemento principal */
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    list-style-type: none;
+}
+
+nav ul li ul li {
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li ul li a {
+    color: #000;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+nav ul li:hover ul {
+    display: block; /* Muestra el menú desplegable cuando pasas el mouse sobre "Módulos" */
+}
+
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo con transparencia */
+}
+
+.project-name {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+/* Estilos de texto */
+h1, h2 {
+    padding: 20px;
+    text-align: left; /* Alinea los títulos a la izquierda */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para dar contraste */
+}
+
+p {
+    padding: 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: left; /* Alinea los párrafos a la izquierda */
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+/* Otros estilos anteriores... */
+
+/* Estilo para el contenedor de texto e imagen */
+.container {
+    display: flex; /* Utiliza flexbox para alinear el texto y la imagen */
+    background-color: #000000; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 20px 0; /* Margen superior e inferior */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.text-content {
+    flex: 1; /* Toma el espacio restante */
+    margin-right: 20px; /* Espacio entre el texto y la imagen */
+}
+
+.image-content {
+    flex: 0 0 400px; /* Cambia esto para ajustar el tamaño del contenedor de la imagen */
+}
+
+.image-content img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 2px; /* Bordes redondeados para la imagen */
+}
+
+
+
+

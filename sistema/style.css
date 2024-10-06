@@ -1,0 +1,55 @@
+
+body {
+  overflow: hidden;
+  margin: 0px;
+  background-image: url('./image/fondo.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+
+#planetModal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+.modal-content {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+    }
+#closeModal {
+    cursor: pointer;
+    float: right;
+    font-size: 10px;
+    }
+
+    #planetModal {
+      display: none;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      color: white;
+      position: fixed;
+      top: 50%;
+      left: 30%; /* Cambiado para centrar horizontalmente */
+      transform: translate(-60%, -50%); /* Cambiado para centrar correctamente */
+      width: 50%; /* Aumentar el ancho (30% a 50%) */
+      max-width: 700px; /* Puedes dejarlo así o aumentarlo si es necesario */
+      box-sizing: border-box;
+  }
+  
+
+#closeModal {
+  cursor: pointer;
+  color: red;
+  }
