@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <style>
+                a {
+            color: white; /* Cambia el color del enlace a blanco */
+        }
+        
+        a:hover {
+            text-decoration: underline; /* Opcional: agrega subrayado al pasar el ratón */
+        }
+        
+        body {
+            background-color: black; /* Cambia el fondo para que el texto blanco resalte */
+        }
+    </style>
     <title>Acerca de los planetas</title>
 </head>
 <body>
@@ -11,15 +24,7 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li class="dropdown">
-                    <a href="#">Age Categories</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">Child</a></li>
-                        <li><a href="#">Teenager</a></li>
-                        <li><a href="./sistema/index.html">Adult</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="./sistema/index.html">Solar system</a></li>
                 <li><a href="#"></a></li>
             </ul>
         </nav>
@@ -32,7 +37,8 @@
             <br>with skills in programming and web development. We believe that everyone 
             <br>should have access to appreciate the elements of the solar system. In SPACE CITY, 
             <br>we have decided to offer access to the exploration of various celestial bodies, 
-            <br>asteroids, and comets found within our universe.</p>
+            <br>asteroids, and comets found within our universe. 
+            <br><br>I invite you to visit the solar system <a href="./sistema/index.html">by clicking here</a></p>
     </main>
 
     <div class="container">
@@ -54,8 +60,18 @@
             <img src="./img/tem.webp" alt="Descripción de la imagen" />
         </div>
     </div>
-
-    
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'i') {
+                const imageContainer = document.getElementById('fullscreenImage');
+                if (imageContainer.style.display === 'flex') {
+                    imageContainer.style.display = 'none';
+                } else {
+                    imageContainer.style.display = 'flex';
+                }
+            }
+        });
+    </script>
     
 </body>
 </html>

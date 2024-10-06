@@ -47,6 +47,20 @@ body {
       max-width: 700px; /* Puedes dejarlo así o aumentarlo si es necesario */
       box-sizing: border-box;
   }
+
+#instructionWindow {
+    position: absolute;
+             /* Coloca la ventana en el centro horizontalmente */
+    transform: translateX(230%);  /* Ajusta la posición a la izquierda por la mitad de su ancho */
+    width: 300px;         /* Ancho de la ventana */
+    background-color: rgba(0, 0, 0, 0.7);  /* Color de fondo semitransparente */
+    color: white;         /* Color del texto */
+    padding: 10px;        /* Espaciado interno */
+    border-radius: 5px;   /* Bordes redondeados */
+    z-index: 100;        /* Asegura que la ventana esté por encima de otros elementos */
+    font-size: 11px;
+}
+
   
 
 #closeModal {
